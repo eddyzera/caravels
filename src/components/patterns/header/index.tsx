@@ -7,12 +7,12 @@ interface HeaderProps {
   title?: string 
 }
 
-export const Header = ({ title = 'caravels' }: HeaderProps) => {
+export const Header = ({ title = 'Caravels' }: HeaderProps) => {
   return (
     <StyleHeader>
       <Container>
-        <Icon src='/logo.svg' w='10rem' h='10rem' />
-        <HeadingOne>
+        <Icon src='/logo.svg' w='3rem' h='3rem' marginPosition='0 1rem 0 0'/>
+        <HeadingOne fontSize='2rem'>
           { title }
         </HeadingOne>
       </Container>
