@@ -1,3 +1,4 @@
+import { ButtonDefault } from '../../buttonGroups/button/styled'
 import { Container } from '../../container/styled'
 import { Icon } from '../../media/icon/styled'
 import { HeadingOne } from '../../typography/heading/styled'
@@ -15,6 +16,9 @@ export const Header = ({ title = 'Caravels' }: HeaderProps) => {
         <HeadingOne fontSize='2rem'>
           { title }
         </HeadingOne>
+        <ButtonDefault widthButton="5rem">
+          Log In
+        </ButtonDefault>
       </Container>
     </StyleHeader>
   )
