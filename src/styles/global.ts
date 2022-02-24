@@ -17,7 +17,7 @@ export default createGlobalStyle`
   }
 
   body {
-    background: #F7FAFC;
+    background: ${(props) => props.theme.colors['gray.50']};
     --webkit-font-smoothing: antialiased;
   }
 
