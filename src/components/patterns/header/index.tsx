@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { NextLink } from '../../../infra/NextLink/NextLink'
 import { ButtonDefault } from '../../buttonGroups/button/styled'
 import { Container } from '../../container/styled'
