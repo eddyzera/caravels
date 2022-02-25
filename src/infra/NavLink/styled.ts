@@ -1,5 +1,5 @@
 import styled from 'styled-components'
 
-export const NextLinkContainer = styled.a`
+export const NavLinkContainer = styled.a`
   display: flex;
 `
