@@ -7,9 +7,10 @@ import theme from '../styles/theme'
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
-      <Layout />
+      <Layout>
       <Component {...pageProps} />
       <GlobalStyles />
+      </Layout>
     </ThemeProvider>
   )
 }
