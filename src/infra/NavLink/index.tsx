@@ -1,6 +1,11 @@
 import Link from 'next/link'
 import { ReactNode } from 'react'
-import { NavLinkContainer } from './styled'
+
+import styled from 'styled-components'
+
+const NavLinkContainer = styled.a`
+  display: flex;
+`
 
 interface NavLinkProps {
   children: ReactNode

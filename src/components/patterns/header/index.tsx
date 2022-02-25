@@ -3,7 +3,25 @@ import { ButtonDefault } from '../../buttonGroups/button/styled'
 import { Container } from '../../container/styled'
 import { Icon } from '../../media/icon/styled'
 import { HeadingOne } from '../../typography/heading/styled'
-import { Header as StyleHeader } from './style'
+
+import styled from "styled-components"
+
+const HeaderStyle = styled.header`
+  background: ${props => props.theme.colors.white};
+
+  height: 5rem;
+  width: 100%;
+
+  padding: 0 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  button {
+    margin-left: auto;
+  }
+`
 
 interface HeaderProps {
   title?: string 
@@ -11,7 +29,7 @@ interface HeaderProps {
 
 export const Header = ({ title = 'Caravels' }: HeaderProps) => {
   return (
-    <StyleHeader>
+    <HeaderStyle>
       <Container>
         <NavLink anchor='/'>
           <Icon src='/logo.svg' w='3rem' h='3rem' marginPosition='0 1rem 0 0'/>
@@ -23,6 +41,6 @@ export const Header = ({ title = 'Caravels' }: HeaderProps) => {
           Log In
         </ButtonDefault>
       </Container>
-    </StyleHeader>
+    </HeaderStyle>
   )
 }
