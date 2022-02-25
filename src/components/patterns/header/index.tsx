@@ -1,10 +1,10 @@
 import { NavLink } from '../../../infra/NavLink'
-import { ButtonDefault } from '../../buttonGroups/button/styled'
 import { Container } from '../../container/styled'
 import { Icon } from '../../media/icon/styled'
 import { HeadingOne } from '../../typography/heading/styled'
 
 import styled from "styled-components"
+import { UserLogged } from '../userLogged'
 
 const HeaderStyle = styled.header`
   background: ${props => props.theme.colors.white};
@@ -19,6 +19,10 @@ const HeaderStyle = styled.header`
   justify-content: space-between;
 
   button {
+    margin-left: auto;
+  }
+
+  .container-button-group {
     margin-left: auto;
   }
 `
@@ -37,9 +41,7 @@ export const Header = ({ title = 'Caravels' }: HeaderProps) => {
               { title }
             </HeadingOne>
         </NavLink>
-        <ButtonDefault widthButton="5rem">
-          Log In
-        </ButtonDefault>
+        <UserLogged />
       </Container>
     </HeaderStyle>
   )
